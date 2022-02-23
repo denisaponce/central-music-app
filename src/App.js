@@ -4,6 +4,8 @@ import NotFound from './pages/NotFound';
 import HomePage from './pages/HomePage';
 import Sifunciona from './pages/Sifunciona';
 
+
+
 const App = () => {
   return (
     <Router>    
@@ -17,9 +19,12 @@ const App = () => {
         <Route path='/cart' element={<Sifunciona/>}/>
         <Route path='/profile' element={<Sifunciona/>}/>
         <Route path='*' element={<NotFound/>}/>
+
+        
       </Routes>
     </Router>
-  )
+
+)
 }
 
 export default App;
