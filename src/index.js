@@ -5,11 +5,16 @@ import App from './App';
 import store from './redux/store';
 import Navbar from './pages/navbar'
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./index.css"
+import { ChakraProvider } from '@chakra-ui/react';
 
 ReactDOM.render(
   <Provider store={store}>
-    <Navbar/>
-    <App />
+    <ChakraProvider>
+      <Navbar/>
+      <App />
+    </ChakraProvider>
+    
   </Provider>,
   document.getElementById('root')
 );
