@@ -1,39 +1,37 @@
 import React from 'react'
+import { Container, Navbar , NavDropdown , Nav} from 'react-bootstrap'
 import Image from '../assets/images/Vector.png'
+import Image2 from '../assets/images/nav-icons.png'
+
+
 const navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div className="container-fluid">
-      <img src={Image} alt="" />
-      <a className="navbar-brand" href="#">Central Music</a>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul className="navbar-nav">
-          <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">Guitars</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">accesories</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">storage</a>
-          </li>
-          <li className="nav-item dropdown">
-            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Lessons
-            </a>
-            <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a className="dropdown-item" href="#">Action</a></li>
-              <li><a className="dropdown-item" href="#">Another action</a></li>
-              <li><a className="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+
+    <Navbar bg="dark" variant ='dark' expand="lg">
+  <Container className='flex'>
+    <img src={Image} alt="" />
+    <Navbar.Brand href="#home">Central Music</Navbar.Brand>
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar.Collapse id="basic-navbar-nav">
+      <Nav className="me-auto">
+        <Nav.Link href="#home">Guitars</Nav.Link>
+        <Nav.Link href="#link">Accesories</Nav.Link>
+        <Nav.Link href="#link">Storage</Nav.Link>
+        <NavDropdown title="Lessons" id="basic-nav-dropdown">
+          <NavDropdown.Item href="#action/3.1">Basic</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.2">Middle </NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.3">Hard</NavDropdown.Item>
+          <NavDropdown.Divider />
+          <NavDropdown.Item href="#action/3.4">IDK</NavDropdown.Item>
+        </NavDropdown>
+        <Nav.Link href="#link">Rrepair</Nav.Link>
+        <img src={Image2} alt="" />
+
+      </Nav>
+    </Navbar.Collapse>
+  </Container>
+</Navbar>
+
   )
 }
 
