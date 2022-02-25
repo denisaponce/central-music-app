@@ -10,18 +10,18 @@ import insta from "../assets/images/icon-insta.png";
 const Footer = () => {
   return (
     <>
-      <Box padding='3rem 0' color="white" bg="#505050">
+      <Box padding="3rem 0" color="white" bg="#505050">
         <Container maxWidth="90%">
           <Flex
-            direction="row"
+            direction={["column", "column", "row", "row"]}
             alignItems="center"
             justifyContent="space-between"
           >
-            <Flex direction="row" gap="3rem">
-              <Box textAlign="start">
+            <Flex direction={["column", "column", "row", "row"]} gap="3rem">
+              <Box textAlign={["center", "center", "start", "start"]}>
                 <Divider
-                  // m={["0 auto 5px", "0 auto 5px", "0 0 9px"]}
-                  mb="9px"
+                  m={["0 auto 5px", "0 auto 5px", "0 0 9px"]}
+                  // mb="9px"
                   bg="white"
                   width="58px"
                   border="1.4px"
@@ -33,7 +33,7 @@ const Footer = () => {
                 <Text>Wishlist</Text>
                 <Text>Account information</Text>
               </Box>
-              <Box d="block">
+              <Box d={["none", "none", "block"]}>
                 <Divider
                   mb="9px"
                   bg="white"
@@ -42,7 +42,7 @@ const Footer = () => {
                   orientation="horizontal"
                 />
                 <Text fontWeight={700}>Store</Text>
-                <Text >Segurity Notice</Text>
+                <Text>Segurity Notice</Text>
                 <Text>Locations & Hours</Text>
                 <Text>Rentals</Text>
                 <Text>Privacy Notice</Text>
@@ -51,17 +51,21 @@ const Footer = () => {
             <Flex
               mt={1}
               gap={4}
-              alignItems="flex-end"
+              alignItems={["center", "center", "flex-end", "flex-end"]}
               height="fit-content"
               flexDirection="column"
             >
-              <Box d="flex" alignItems="center" gap="0.6rem">
+              <Box
+                d={["none", "none", "flex", "flex"]}
+                alignItems="center"
+                gap="0.6rem"
+              >
                 <Image src={iconFooter} alt="logo" />
                 <Text fontSize={32}>
                   <strong>Central</strong>Music
                 </Text>
               </Box>
-              <Box gap={3} d="flex" mt="1.5rem">
+              <Box gap={3} d="flex" mt={[5, 5, 0, 0]}>
                 <Image src={yt} alt="imagen" />
                 <Image src={twitter} alt="imagen" />
                 <Image src={insta} alt="imagen" />
@@ -71,12 +75,15 @@ const Footer = () => {
           </Flex>
         </Container>
       </Box>
-      <Flex  justify="normal" color="white" bg="#252525">
-        <Container maxWidth='90%'>
-          <Text p='0.5rem 0'>©2021 Music Store</Text>
+      <Flex
+        justify={["center", "center", "center", "normal"]}
+        color="white"
+        bg="#252525"
+      >
+        <Container maxWidth="90%">
+          <Text textAlign={['center','center','start']} p="0.5rem 0">©2021 Music Store</Text>
         </Container>
       </Flex>
-      
     </>
   );
 };
