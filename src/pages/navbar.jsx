@@ -4,12 +4,15 @@ import Image from '../assets/images/Vector.png'
 import Image2 from '../assets/images/nav-icons.png'
 
 
+
 const navbar = () => {
   return (
+<>
+    {/* <div className="hero"> */}
 
-    <Navbar bg="dark" variant ='dark' expand="lg">
+    <Navbar className='header' bg="dark" variant ='dark' expand="lg">
   <Container className='flex'>
-    <img src={Image} alt="" />
+    <img  src={Image} alt="" />
     <Navbar.Brand href="#home">Central Music</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
@@ -29,8 +32,20 @@ const navbar = () => {
 
       </Nav>
     </Navbar.Collapse>
+
   </Container>
+
 </Navbar>
+{/* <div>
+<h1>
+  FULLFILLINGS dreams whith strings attaches  
+</h1>
+
+</div>
+    </div> */}
+
+
+</>
 
   )
 }
