@@ -1,4 +1,5 @@
 import "./css/hero.css"
+import "./css/subhero.css"
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
@@ -10,12 +11,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css"
 import { ChakraProvider } from '@chakra-ui/react';
 import "./css/header.css"
+import Subhero from './components/Subhero'
 
 ReactDOM.render(
   <Provider store={store}>
     <ChakraProvider>
       <Navbar/>
       <Hero/>
+      <Subhero/>
       <App />
     </ChakraProvider>
     
