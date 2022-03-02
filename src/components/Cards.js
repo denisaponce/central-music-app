@@ -4,17 +4,19 @@ import React from "react";
 const Cards = ({ product }) => {
   
   return (
-    <div>
+    <>
       {product?.map((product) => (
         <Box
-          mt="2rem"
+          d={product.display}
+          // mt="2rem"
+          m='0 auto '
           key={product.id}
           backgroundImage={product ? product.background : null}
           bgRepeat="no-repeat"
           bgSize="cover"
           rounded="10px"
           boxShadow="1px 1px 1px 1px gainsboro"
-          width="330px"
+          width='fit-content'
           overflow="visible"
         >
           <Image
@@ -52,7 +54,7 @@ const Cards = ({ product }) => {
           </Box>
         </Box>
       ))}
-    </div>
+    </>
   );
 };
 
