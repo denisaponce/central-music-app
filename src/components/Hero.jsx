@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div className='hero'><h1>TESTO sOBre GUITARRAS y msa cosas nose aosnfdksnfkjnsdkf</h1></div>
+    <div className='hero'><h1>Fullfilling dreams with strings attached</h1></div>
   )
 }
 

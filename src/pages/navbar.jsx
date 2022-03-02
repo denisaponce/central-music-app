@@ -8,8 +8,8 @@ const navbar = () => {
     <>
       {/* <div className="hero"> */}
 
-      <Navbar className="header" bg="dark" variant="dark" expand="lg">
-        <Container className="flex">
+      <Navbar className="header"  variant="ligth" expand="lg">
+        <Container >
           <img src={Image} alt="" />
           <Navbar.Brand href="#home">Central Music</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -26,7 +26,7 @@ const navbar = () => {
                 <NavDropdown.Item href="#action/3.4">IDK</NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href="#link">Repair</Nav.Link>
-              <img src={Image2} alt="" />
+              {/* <img src={Image2} alt="" /> */}
             </Nav>
           </Navbar.Collapse>
         </Container>

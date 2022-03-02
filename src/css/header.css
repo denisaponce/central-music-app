@@ -6,11 +6,11 @@
   padding-bottom: 0;
   
 }
- H1{
+H1{
    
-    font-size: 5rem !important;
-    width: 35rem;
-    color :white;
+  font-size: 5rem !important;
+  width: 35rem;
+  color :white;
 
-    padding-top : 10rem;
+  padding :10rem 5rem;
 }

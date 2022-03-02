@@ -2,8 +2,21 @@
     background: url('../assets/images/backgroundhero.png') no-repeat center;
       
     background-size: cover ;
+    background-position: center;
     min-height: 100vh;
     
     margin-top: -50px;
    
   }
+
+  
+
+  /* H1{
+   
+    font-size: 5rem !important;
+    width: 35rem;
+    color :white;
+
+    padding-top : 10rem;
+    margin-left: 10rem;
+} */

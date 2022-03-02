@@ -3,6 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NotFound from './pages/NotFound';
 import HomePage from './pages/HomePage';
 import Sifunciona from './pages/Sifunciona';
+import "./css/header.css"
+import "./css/Gearhead.css"
+import "./css/hero.css"
+import "./css/subhero.css"
 // import Navbar from './pages/navbar'
 
 
