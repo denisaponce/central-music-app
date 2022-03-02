@@ -4,7 +4,7 @@
     background-size: cover ;
     background-position: center;
     min-height: 100vh;
-    
+    /* position: inherit; */
     margin-top: -50px;
    
   }
@@ -20,3 +20,7 @@
     padding-top : 10rem;
     margin-left: 10rem;
 } */
+
+body{
+  background-color: black;
+}

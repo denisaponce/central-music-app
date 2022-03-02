@@ -8,29 +8,24 @@ const navbar = () => {
     <>
       {/* <div className="hero"> */}
 
-      <Navbar className="header"  variant="ligth" expand="lg">
-        <Container >
-          <img src={Image} alt="" />
-          <Navbar.Brand href="#home">Central Music</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="#home">Guitars</Nav.Link>
-              <Nav.Link href="#link">Accesories</Nav.Link>
-              <Nav.Link href="#link">Storage</Nav.Link>
-              <NavDropdown title="Lessons" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Basic</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Middle </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Hard</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">IDK</NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link href="#link">Repair</Nav.Link>
-              {/* <img src={Image2} alt="" /> */}
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+      <Navbar bg="ligth" variant='dark' expand="lg">
+  <Container>
+    <img src={Image} alt="" />
+    <Navbar.Brand href="#home">Central Music</Navbar.Brand>
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar.Collapse id="basic-navbar-nav" variant='dark'>
+      <Nav className="me-auto">
+        <Nav.Link href="#home">guitars</Nav.Link>
+        <Nav.Link href="#link">accesories</Nav.Link>
+        <Nav.Link href="#link">storage</Nav.Link>
+        <Nav.Link href="#link">lessons</Nav.Link>
+        <Nav.Link href="#link">repair</Nav.Link>
+       
+      </Nav>
+    <img src={Image2} alt="" />
+    </Navbar.Collapse>
+  </Container>
+</Navbar>
       {/* <div>
           <h1>
           FULLFILLINGS dreams whith strings attaches  
