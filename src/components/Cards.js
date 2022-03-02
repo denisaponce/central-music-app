@@ -12,6 +12,7 @@ const Cards = ({ product }) => {
           m='0 auto '
           key={product.id}
           backgroundImage={product ? product.background : null}
+          bgColor={product ? product.color : null}
           bgRepeat="no-repeat"
           bgSize="cover"
           rounded="10px"
