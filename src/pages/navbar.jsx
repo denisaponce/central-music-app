@@ -7,7 +7,6 @@ const navbar = () => {
   return (
     <>
       {/* <div className="hero"> */}
-
       <Navbar bg="ligth" variant='dark' expand="lg">
   <Container>
     <img src={Image} alt="" />
