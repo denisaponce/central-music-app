@@ -3,7 +3,7 @@ import { Button, Card } from 'react-bootstrap'
 
 const Subhero = () => {
   return (
-    <div className='container-sub-hero container'> 
+    <div className='container'> 
         <Card bg = 'danger' className='container-sub-hero'>
   <Card.Header as="h2">Free Guitar Lessons!!</Card.Header>
   <Card.Body>
