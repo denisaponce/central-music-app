@@ -13,10 +13,8 @@ const HomePage = () => {
   return (
 
     <>
-      {/* <h1>HomePage</h1> */}
-      {/* <Cards  product={newProdcuts}/> */}
       <Navbar/>
-      <Hero/>
+      {/* <Hero/> */}
       <Subhero/>
       <NewProducts/>
       <PopularFinds/>

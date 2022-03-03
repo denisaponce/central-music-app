@@ -9,7 +9,7 @@ const Cards = ({ product }) => {
         <Box
           d={product.display}
           // mt="2rem"
-          m='0 auto '
+          m='0 auto 2rem '
           key={product.id}
           backgroundImage={product ? product.background : null}
           bgColor={product ? product.color : null}
@@ -37,7 +37,7 @@ const Cards = ({ product }) => {
             borderBottomLeftRadius="10px"
           >
             <Box width="fit-content">
-              <Text>{product.tittle}</Text>
+              <Text>{product.title}</Text>
               <Text>{product.description}</Text>
             </Box>
             <Text ml={50}>{product.price}</Text>
