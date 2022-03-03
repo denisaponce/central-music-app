@@ -1,19 +1,67 @@
-import React from 'react'
-import { Button, Card } from 'react-bootstrap'
+import {
+  Box,
+  Button,
+  Container,
+  Divider,
+  Flex,
+  Heading,
+  Image,
+  Text,
+} from "@chakra-ui/react";
+import React from "react";
+import img from "../assets/images/bg-subhero.png";
 
 const Subhero = () => {
   return (
-    <div className='container'> 
-        <Card bg = 'danger' className='container-sub-hero'>
-  <Card.Header as="h2">Free Guitar Lessons!!</Card.Header>
-  <Card.Body>
-    <Card.Title>Purchase any guitar over $499.99 and recive one-hour for lessons free</Card.Title>
-    
-    <Button variant="primary">Learn more</Button>
-  </Card.Body>
-</Card>
-    </div>
-  )
-}
+    <>
+      <Box
+        d='flex'
+        alignItems='center'
+        justifyContent='center'
+        maxWidth="90%"
+        m='3rem auto'
+        h={240}
+        bgImage={img}
+        bgSize="cover"
+        bgPosition="center"
+        bgRepeat="no-repeat"
+        borderRadius="0.5rem"
+      >
+        <Box
+          textAlign="center"
+        >
+          <Heading
+            m='0 auto'
+            w={[null,'360px','600px','600px']}
+            fontSize={['40px','40px','46px','46px']}
+            color="white"
+          >
+            FREE GUITAR LESSONS!{" "}
+          </Heading>
+          <Text
+            m='0 auto'
+            w={['200px','200px','490px','490px']}
+            fontSize={['13px','13px','24px','24px']}
+            color="white"
+            fontWeight="400"
+          >
+            Purchase any guitar over $499.99 and recieve a one-hour guitar
+            lesson free.{" "}
+          </Text>
+          <Button colorScheme="orange" mt="1rem" borderRadius="1.3rem">
+            LEARN MORE
+          </Button>
+        </Box>
+      </Box>
+      {/* <Box p="3rem 0">
+        <Container maxWidth="90%">
+          <Flex>
+            <Heading>Hola</Heading>
+          </Flex>
+        </Container>
+      </Box> */}
+    </>
+  );
+};
 
-export default Subhero
+export default Subhero;
