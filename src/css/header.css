@@ -1,16 +1,10 @@
-
-
 .navbar {
-  
-
   padding-bottom: 0;
-  
 }
-H1{
-   
+.h1 {
   font-size: 5rem !important;
   width: 35rem;
-  color :white;
+  color: white;
 
-  padding :10rem 5rem;
+  padding: 10rem 5rem;
 }

@@ -20,7 +20,7 @@ const Navbar2 = () => {
             <Link to="/">Central Music</Link> */}
             <Link to='/'>
               <Box mr='2rem' d='flex' gap='0.6rem' alignItems='center'>
-                <img src={Image}/>
+                <img src={Image} alt='imagen'/>
                 <Text color='white' fontSize='20px'><strong>Central</strong> Music</Text>
               </Box>
             </Link>
