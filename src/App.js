@@ -9,6 +9,8 @@ import "./css/hero.css"
 import "./css/subhero.css"
 
 import Navbar from './pages/navbar'
+import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
 
 
 const App = () => {
@@ -24,7 +26,8 @@ const App = () => {
         <Route path='/lessons' element={<Sifunciona/>}/>
         <Route path='/repairs' element={<Sifunciona/>}/>
         <Route path='/cart' element={<Sifunciona/>}/>
-        <Route path='/profile' element={<Sifunciona/>}/>
+        <Route path='/profile' element={<LoginPage/>}/>
+        <Route path='/register' element={<RegisterPage/>}/>
         <Route path='*' element={<NotFound/>}/>
         
       </Routes>

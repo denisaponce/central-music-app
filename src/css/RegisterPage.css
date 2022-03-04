@@ -1,0 +1,25 @@
+.form-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: rgb(52, 106, 223);
+  text-decoration: none;
+}
+/* a:hover {
+  text-decoration: underline;
+} */
+.text-center {
+  text-align: center;
+}
+.btn {
+  color: white;
+  padding: 0.7rem;
+  border: none;
+  background-color: red;
+  margin-top: 0.9rem;
+  border-radius: 25px;
+}
