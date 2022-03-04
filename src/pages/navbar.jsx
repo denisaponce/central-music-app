@@ -13,9 +13,6 @@ const Navbar2 = () => {
 
   return (
     <>
-      {/* <div className="hero"> */}
-      {/* className="header navbar-dark bg-primary" */}
-      {/* agregué "navbar-dark bg-primary" en "Navbar" e "image2" de la lina 29 a la 30 */}
       <Box bg='#212529'>
         <Navbar bg={Transparent ? "dark" : "transparent"} expand="lg">
           <Container color="white">
@@ -50,13 +47,6 @@ const Navbar2 = () => {
         </Navbar>
       </Box>
 
-      {/* <div>
-          <h1>
-          FULLFILLINGS dreams whith strings attaches  
-          </h1>
-
-        </div>
-      </div> */}
     </>
   );
 };

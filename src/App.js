@@ -26,7 +26,6 @@ const App = () => {
         <Route path='/cart' element={<Sifunciona/>}/>
         <Route path='/profile' element={<Sifunciona/>}/>
         <Route path='*' element={<NotFound/>}/>
-
         
       </Routes>
     </Router>

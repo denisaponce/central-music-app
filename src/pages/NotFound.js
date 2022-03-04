@@ -1,8 +1,9 @@
+import { Heading } from '@chakra-ui/react';
 import React from 'react'
 
 const NotFound = () => {
   return (
-    <h1>404 NotFound</h1>
+    <Heading color='black'>404 NotFound</Heading>
   )
 }
 

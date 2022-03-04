@@ -1,4 +1,4 @@
-import { Box, Container, Divider, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Container, Divider, Flex, Image, Link, Text } from "@chakra-ui/react";
 import React from "react";
 
 import iconFooter from "../assets/images/icon-footer.png";
@@ -55,7 +55,7 @@ const Footer = () => {
               height="fit-content"
               flexDirection="column"
             >
-              <Box
+              <Link
                 d={["none", "none", "flex", "flex"]}
                 alignItems="center"
                 gap="0.6rem"
@@ -64,12 +64,12 @@ const Footer = () => {
                 <Text fontSize={32}>
                   <strong>Central</strong>Music
                 </Text>
-              </Box>
+              </Link>
               <Box gap={3} d="flex" mt={[5, 5, 0, 0]}>
-                <Image src={yt} alt="imagen" />
-                <Image src={twitter} alt="imagen" />
-                <Image src={insta} alt="imagen" />
-                <Image src={face} alt="imagen" />
+                <Link href="https://www.youtube.com/user/pmpeloc/videos" isExternal><Image src={yt} alt="youtube" /></Link>
+                <Link to='#'><Image src={twitter} alt="twitter" /></Link>
+                <Link to='#'><Image src={insta} alt="instagram" /></Link>
+                <Link to='#'><Image src={face} alt="facebook" /></Link>
               </Box>
             </Flex>
           </Flex>
