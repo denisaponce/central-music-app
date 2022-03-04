@@ -5,7 +5,7 @@ import NewProducts from './NewProducts';
 import PopularFinds from './PopularFinds';
 import Subhero from '../components/Subhero'
 import Gearhead from '../components/Gearhead'
-import Navbar from '../pages/navbar'
+// import Navbar from '../pages/navbar'
 import Hero from '../components/Hero'
 
 
@@ -13,8 +13,8 @@ const HomePage = () => {
   return (
 
     <>
-      <Navbar/>
-      {/* <Hero/> */}
+      {/* <Navbar/> */}
+      <Hero/>
       <Subhero/>
       <NewProducts/>
       <PopularFinds/>
