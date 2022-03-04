@@ -7,12 +7,14 @@ import "./css/header.css"
 import "./css/Gearhead.css"
 import "./css/hero.css"
 import "./css/subhero.css"
-// import Navbar from './pages/navbar'
+
+import Navbar from './pages/navbar'
 
 
 const App = () => {
   return (
-    <Router>    
+    <Router>   
+      <Navbar/> 
       <Routes>
         <Route path='/' element={<HomePage/>}/>
         {/* <Route path='/' element={<Navbar/>}/> */}

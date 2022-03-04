@@ -1,42 +1,54 @@
 import React, { useState } from "react";
-import { Container, Navbar, Nav,} from "react-bootstrap";
+import { Container, Navbar, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { Box, Text } from "@chakra-ui/react";
+
 import Image from "../assets/images/Vector.png";
-import Image2 from "../assets/images/nav-icons.png";
+import cart from '../assets/images/cart.png';
+import profile from '../assets/images/profile.png';
 
-
+// import Image2 from "../assets/images/nav-icons.png";
 const Navbar2 = () => {
-  
-  const [Transparent, setTransparent] = useState('transparent')
-
-  
+  const [Transparent, setTransparent] = useState(false);
 
   return (
     <>
       {/* <div className="hero"> */}
       {/* className="header navbar-dark bg-primary" */}
       {/* agregué "navbar-dark bg-primary" en "Navbar" e "image2" de la lina 29 a la 30 */}
-      
-       {} 
-      
-      
-      <Navbar  bg={Transparent} variant="dark" expand="lg">
-        <Container >
-          <img src={Image} alt="" />
-          <Navbar.Brand href="#home" >Central Music</Navbar.Brand>
-          <Navbar.Toggle type="button" onClick={() => setTransparent('dark')} aria-controls="basic-navbar-nav" />
+      <Box bg='#212529'>
+        <Navbar bg={Transparent ? "dark" : "transparent"} expand="lg">
+          <Container color="white">
+            {/* <img src={Image} alt="" />
+            <Link to="/">Central Music</Link> */}
+            <Link to='/'>
+              <Box mr='2rem' d='flex' gap='0.6rem' alignItems='center'>
+                <img src={Image}/>
+                <Text color='white' fontSize='20px'><strong>Central</strong> Music</Text>
+              </Box>
+            </Link>
+            <Navbar.Toggle
+              type="button"
+              onClick={() => setTransparent(!Transparent)}
+              aria-controls="basic-navbar-nav"
+            />
 
-          <Navbar.Collapse type='button'  id="basic-navbar-nav"  >
-            <Nav  className="me-auto gap-4" variant="light">
-              <Nav.Link  href="#home">Guitars</Nav.Link>
-              <Nav.Link  href="#link">Accesories</Nav.Link>
-              <Nav.Link  href="#link">Storage</Nav.Link>
-              <Nav.Link  href='#link'>Lessons</Nav.Link>
-              <Nav.Link  href="#link">Repairs</Nav.Link>
-            </Nav>
-            <img src={Image2} alt="img" />
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+            <Navbar.Collapse type="button" id="basic-navbar-nav">
+              <Nav className="me-auto gap-5 text-white">
+                <Link to="/guitars">Guitars</Link>
+                <Link to="/accessories">Accessories</Link>
+                <Link to="/storage">Storage</Link>
+                <Link to="lessons">Lessons</Link>
+                <Link to="repairs">Repairs</Link>
+              </Nav>
+              <Box d='flex' gap='1rem'>
+                <Link to='/cart'><img src={cart} alt="img" /></Link>
+                <Link to='/profile'><img src={profile} alt="img" /></Link>
+              </Box>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+      </Box>
 
       {/* <div>
           <h1>
